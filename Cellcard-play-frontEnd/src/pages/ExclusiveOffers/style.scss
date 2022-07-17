@@ -1,0 +1,65 @@
+/*
+ * Author: Buwaneka Sumanasekara (bsumanasekara@mitrai.com)
+ * Date: Monday, 24th August 2020 1:28:58 pm
+ * Module: Cellcard Play Frontend
+ * -----
+ * Modified: Sunday, 30th August 2020 8:19:41 am
+ * Modified By: Buwaneka Sumanasekara (bsumanasekara@mitrai.com>)
+ * -----
+ * Modified: Friday, 11th September 2020 12:15 pm
+ * Modified By: Jerobert (zjerobert@mitrai.com)
+ * Copyright © 2020 Cellcard Play. All rights reserved.
+ */
+
+ .empty-result-exclusive-items {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    img {
+      width: 108px;
+      height: 108px;
+    }
+    .btn {
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+    .title {
+      font-size: 18px;
+      font-weight: 600;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    .body {
+      font-size: 16px;
+      font-weight: normal;
+      color: #e3e3e3;
+    }
+  }
+  
+  .tab-game-items {
+    .nav-link:active {
+      border-width: 0;
+    }
+  }
+  
+  .tab-content {
+    .store-item {
+      &-title {
+        font-size: 16px !important;
+        font-weight: 600;
+      }
+      &-plan-badges {
+        img {
+          width: 19.8px;
+          height: 20px;
+        }
+      }
+    }
+  }
+  

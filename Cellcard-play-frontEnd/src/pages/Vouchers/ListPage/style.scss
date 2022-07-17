@@ -1,0 +1,38 @@
+/*
+ * Author: Buwaneka Sumanasekara (bsumanasekara@mitrai.com)
+ * Date: Wednesday, 19th August 2020 9:22:46 am
+ * Module: Cellcard Play Frontend
+* -----
+* Last Modified: Monday, 21st September 2020 10:34 am
+* Modified By: Dilum Sanjaya (dranasinghe@mitrai.com)
+* -----
+ */
+
+.empty-result-vouchers {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  img {
+    width: 108px;
+    height: 108px;
+  }
+  .btn {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  .title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .body {
+    font-size: 16px;
+    font-weight: normal;
+    color: #e3e3e3;
+  }
+}

@@ -1,0 +1,82 @@
+/*
+ * Author: Buwaneka Sumanasekara (bsumanasekara@mitrai.com)
+ * Date: Thursday, 13th August 2020 7:21:19 am
+ * Module: Cellcard Play Frontend
+ * -----
+ * Last Modified: Wednesday, 19th August 2020 12:18:38 pm
+ * Modified By: Buwaneka Sumanasekara (bsumanasekara@mitrai.com>)
+ * Copyright © 2020 Cellcard Play. All rights reserved.
+ */
+
+.logged-in-template {
+  .bottom-wrapper {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  .btn--logout {
+    color: #f1001e;
+  }
+  .icon-chevron_right {
+    color: #0097dc;
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .btn--version {
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+  .dialog-logout {
+    .dialog-logout-body {
+      padding-bottom: 25px;
+    }
+    .dialog-logout-body-title-sub {
+      font-size: 16px;
+      font-weight: normal;
+      color: #e3e3e3;
+    }
+  }
+  &-logout-button{
+    font-size: 14px;
+  font-weight: 600;
+    margin-top: 24px;
+    height: 40px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+}
+.list-item-wrapper--more {
+  margin-top: 40px;
+
+  .list-item-default {
+    padding: 13px 15px;
+    border: none;
+    margin: 0;
+    background-color: #222327 !important;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      height: 1px;
+      padding: 0 15px;
+      bottom: 0;
+      left: 15px;
+      right: 15px;
+      background-color: #101010;
+    }
+
+    &:nth-last-child(1) {
+      &:after {
+        display: none;
+      }
+    }
+  }
+}

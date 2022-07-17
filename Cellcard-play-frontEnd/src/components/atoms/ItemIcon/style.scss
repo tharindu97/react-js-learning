@@ -1,0 +1,12 @@
+.atom-item-icon {
+  display: flex;
+  margin-top: 13px;
+  margin-bottom: 3px;
+  overflow: hidden;
+  [class^='icon-'],
+  [class*=' icon-'] {
+    color: #0097dc;
+    font-size: 20px;
+    padding-right: 10px;
+  }
+}

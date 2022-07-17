@@ -1,0 +1,80 @@
+/*
+ * Author: Dilum Sanjaya (dranasinghe@mitrai.com)
+ * Date: Friday 31 July 2020 5:00:00 pm
+ * Module: Cellcard Play Frontend
+ * Copyright © 2020 Cellcard Play. All rights reserved.
+ */
+ 
+.membership-card{
+  position: relative;
+  min-height: 45vw;
+
+  &-top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-left: 16px;
+    &-logo-image{
+      width: 15vw;
+    }
+
+    &-logo{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 16px;
+
+    }
+
+    &-duration{
+      font-size: 5vw;
+      line-height: 22px;
+      font-weight: 100;
+      margin-top: 0px;
+      letter-spacing: 2px;
+      text-shadow: rgba(0, 0, 0, 0.5) 0 2px 4px; 
+    }
+  }
+
+  &-status{
+    font-size: 14px;
+    text-transform: uppercase;
+    background: #10101085;
+    width: 86px;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
+
+  &-validity{
+    margin-top: 5px;
+    font-size: 11px;
+
+    &-date{
+      font-size: 13px;
+    }
+  }
+
+  &-bottom{
+    position: absolute;
+    bottom: 7%;
+    left:0%;
+    right:0%;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    &-details-number{
+      font-size: 14px;
+    }
+    &-details-add-name{
+      font-size: 14px;
+    }
+  }
+
+}

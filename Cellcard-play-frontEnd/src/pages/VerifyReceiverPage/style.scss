@@ -1,0 +1,20 @@
+.buy-others{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 46px);
+    .btn{
+        border-radius: 0;
+    }
+    &-top{
+        flex:1;
+
+        &-description{
+            margin-top: 15px;
+            padding-left: 30px;
+            padding-right: 30px;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+    }
+
+}

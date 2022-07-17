@@ -1,0 +1,60 @@
+/*
+ * Author: Dilum Sanjaya (dranasinghe@mitrai.com)
+ * Date: Tuesday, 12th August 2020 12:00 pm
+ * Module: Cellcard Play Frontend
+ * Copyright © 2020 Cellcard Play. All rights reserved.
+ */
+.summary {
+  padding-left: 15px;
+  padding-right: 15px;
+  &-points {
+    border-radius: 10px;
+    background-color: #222327;
+    padding: 15px 0 0 0;
+
+    &-title {
+      font-size: 18px;
+      font-weight: 600;
+      text-align: center;
+    }
+    &-value {
+      font-size: 24px;
+      font-weight: 600;
+      text-align: center;
+      color: #f9a01b;
+    }
+    &-expiry {
+      margin-top: 20px;
+      border-top: 1px solid #101010;
+      padding: 12px 22px 19px 19px;
+    }
+  }
+  &-actions {
+    display: flex;
+
+    &-buy {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 18px;
+      font-weight: 600;
+      color: #fff;
+    }
+    &-redeem {
+      width: 50%;
+      border-left: 1px solid #101010;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    &-redeem-code{
+      border-top: 1px solid #101010;
+    }
+    &-redeem-coins-img{
+      width: 34px;
+    }
+  }
+}

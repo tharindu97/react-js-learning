@@ -1,0 +1,20 @@
+.desktop_page__footer {
+  background-color: #171819;
+  height: 350px;
+
+  &-header{
+    padding-top: 35px;
+  }
+
+  .awards {
+    &-title {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    img{
+      width:234px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+/*
+ * Author: Dilum Sanjaya (dranasinghe@mitrai.com)
+ * Date: Friday 31 July 2020 5:00:00 pm
+ * Module: Cellcard Play Frontend
+ * Copyright © 2020 Cellcard Play. All rights reserved.
+ */
+ 
+.card {
+  background-color: #222327;
+  border-radius: 10px;
+  margin-top: 1rem;
+  overflow: hidden;
+
+  &-padded {
+    padding: 1rem;
+  }
+}

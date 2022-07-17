@@ -1,0 +1,63 @@
+/*
+ * File: index.scss
+ * Project: cellcard-play-pwa
+ * File Created: Monday, 13th July 2020 12:34:33 pm
+ * Author: Jude Fernando (jfernando@mitrai.com)
+ * -----
+ * Last Modified: Monday, 13th July 2020 1:43:42 pm
+ * Modified By: Jude Fernando (jfernando@mitrai.com)
+ * -----
+ * Copyright 2020 - 2020 Mitra Innovation Ltd., Mitra Innovation Ltd.
+ */
+
+.confirm-alert {
+    display: none;
+    z-index: 999999;
+    position: relative;
+
+    &.active {
+        display: block;
+    }
+
+    &-dialog {
+        position: fixed;
+        width: 100%;
+        padding: 1rem;
+        padding-bottom: 2rem;
+        background-color: #2e3038;
+        border-radius: 0.5rem 0.5rem 0 0;
+        z-index: 1;
+        transition: all 500ms ease;
+        opacity: 0;
+        bottom: 0;
+        transform: translateY(100%);
+
+        .active & {
+            animation: slideUp 300ms forwards;
+        }
+    }
+
+    &-title {
+        font-size: 21px;
+        text-align: center;
+    }
+
+    &-body {
+        margin: 20px 0;
+    }
+
+    &:after {
+        content: "";
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        opacity: 0;        
+    }
+    &.active:after {
+        animation: fadeIn 300ms forwards;
+    }
+}

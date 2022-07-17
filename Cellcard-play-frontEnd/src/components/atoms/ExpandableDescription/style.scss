@@ -1,0 +1,17 @@
+.expanded-description {
+  font-size: 16px;
+  font-weight: normal;
+  color: #bdb9b9;
+
+  &-button {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    text-decoration: underline;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    color: #0097dc;
+    margin-left: 5px;
+  }
+}

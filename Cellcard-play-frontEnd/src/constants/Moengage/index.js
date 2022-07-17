@@ -1,0 +1,2 @@
+export const PRODUCT_PURCHASE = 'PRODUCT_PURCHASE';
+export const CHECKOUT = 'CHECKOUT';

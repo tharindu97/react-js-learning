@@ -1,0 +1,52 @@
+/*
+ * File: index.js
+ * Project: cellcard-play-pwa
+ * File Created: Thursday, 6th August 2020 12:28:09 pm
+ * Author: Jerobert (zjerobert@mitrai.com)
+ * -----
+ * Copyright 2020 - 2020 Mitra Innovation Ltd., Mitra Innovation Ltd.
+ */
+.custom-accordian {
+
+  .card {
+    background-color: transparent;
+
+    &-header {
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 16px;
+      padding-right: 16px;
+      display: flex;
+      justify-content: space-between;
+
+      &-question {
+        font-size: 18px;
+        margin-right: 0.3rem;
+      }
+    }
+
+    &-body {
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 16px;
+      padding-right: 16px;
+      margin: 0;
+      font-size: 16px;
+      color: #bdb9b9;
+    }
+  }
+
+  .icon-chevron-up,
+  .icon-chevron-down {
+    color: #0097dc;
+    font-size: 16px;
+    font-weight: bolder;
+  }
+
+  &-line {
+    background-color: #383838;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}

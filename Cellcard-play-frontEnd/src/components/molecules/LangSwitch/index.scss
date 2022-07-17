@@ -1,0 +1,144 @@
+/*
+ * File: index.scss
+ * Project: cellcard-play-pwa
+ * File Created: Tuesday, 14th July 2020 1:24:14 am
+ * Author: Jude Fernando (jfernando@mitrai.com)
+ * -----
+ * Modified: Tuesday, 14th July 2020 2:03:30 am
+ * Modified By: Jude Fernando (jfernando@mitrai.com)
+ * -----
+ * Last Modified: Wednesday, 23th September 2020 1:15:30 pm
+ * Modified By: Jerobert (zjerobert@mitrai.com)
+ * -----
+ * Copyright 2020 - 2020 Mitra Innovation Ltd., Mitra Innovation Ltd.
+ */
+
+.lang-switch {
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+
+  .side-menu & {
+    margin-bottom: 45px;
+  }
+
+  .lang-en {
+    font-family: 'Muli', sans-serif;
+  }
+  .lang-zh {
+    font-family: 'Noto Sans SC', sans-serif;
+  }
+  .lang-km {
+    font-family: 'Nokora', serif;
+  }
+
+  button {
+    border: solid 2px transparent !important;
+    border-radius: 6px;
+    display: flex;
+    padding: 0.4rem;
+
+    @media only screen and (min-width: 360px) {
+      padding: 0.6rem;
+    }
+
+    &:nth-child(2) {
+      margin: 0 4px;
+    }
+
+    img {
+      width: 22px;
+      margin-right: 6px;
+      margin-top: 2px;
+    }
+  }
+
+  .active {
+    border: solid 2px #0097dc !important;
+
+    &:after {
+      content: '\e917';
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'icomoon' !important;
+      speak: never;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: #0097dc;
+      font-size: 1.2rem;
+      display: inline-block;
+      padding: 0.2rem;
+    }
+  }
+}
+
+.lang-switch--full {
+  flex-direction: column;
+  padding-right: 0;
+  padding-left: 0;
+  .btn {
+    text-align: left;
+    display: flex;
+    margin: 2px 0;
+    border-radius: 0;
+    border: 0 !important;
+    margin: 0;
+    padding: 13px 15px;
+    background-color: #222327 !important;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      height: 1px;
+      padding: 0 15px;
+      bottom: 0;
+      left: 15px;
+      right: 15px;
+      background-color: #101010;
+    }
+    &:nth-last-child(1) {
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  .btn.active.focus,
+  .btn.active:focus,
+  .btn.focus,
+  .btn.focus:active,
+  .btn:active:focus,
+  .btn:focus {
+    outline: 0 !important;
+    outline-offset: 0 !important;
+    background-image: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+
+  button:nth-child(2) {
+    margin: 0;
+  }
+
+  .active:after {
+    margin-left: auto;
+  }
+}
+.desktop_page__footer-header {
+  .lang-switch {
+    justify-content: flex-end;
+    padding-right: 0;
+    padding-left: 0;
+    button {
+      margin-left: 6px;
+    }
+  }
+}

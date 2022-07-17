@@ -1,0 +1,84 @@
+/*
+ * File: index.scss
+ * Project: cellcard-play-pwa
+ * File Created: Monday, 13th July 2020 3:35:31 pm
+ * Author: Jude Fernando (jfernando@mitrai.com)
+ * -----
+ * Last Modified: Tuesday, 14th July 2020 1:24:57 am
+ * Modified By: Jude Fernando (jfernando@mitrai.com)
+ * -----
+ * Copyright 2020 - 2020 Mitra Innovation Ltd., Mitra Innovation Ltd.
+ */
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    transition: all 300ms ease-in-out;
+    opacity: 0;
+    z-index: 100;
+
+    &-inner {
+        width: 90%;
+        background-color: #000;  
+        height: 100%;      
+        display: flex;
+        flex-direction: column;    
+        max-width: 370px;    
+    }
+
+    &.active {
+        left: 0;
+        opacity: 1;
+        background-color: rgba($color: #000000, $alpha: .7);  
+    }
+
+    .nav {
+        a {
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+        }
+        .nav-link {
+            position: relative;
+            padding-left: 20px;
+
+            &.active:before {
+                content: "";
+                position: absolute;
+                background-color: #0097dc;
+                width: 5px;
+                border-radius: 2px;
+                height: 27px;
+                left: 2px;
+            }
+        }
+    }
+
+    &-close {
+        font-size: 20px;
+        padding: 10px;
+        width: fit-content;
+        color: #fff;
+        &:focus,
+        &.active,
+        &:hover {
+            color: #fff;
+            text-decoration: none;
+            box-shadow: none;
+        }
+        margin: 10px 10px 20px 6px;
+    }
+
+    &-footer {
+        padding: 15px;
+        margin-top: auto;
+        margin-bottom: 30px;
+
+        .btn-primary {
+            padding: 11px;
+        }
+    }
+}

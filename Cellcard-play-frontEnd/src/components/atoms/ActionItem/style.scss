@@ -1,0 +1,94 @@
+.action-item {
+  color: inherit;
+  cursor: pointer;
+  background-image: none;
+  text-transform: none;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e2e8f0;
+  -webkit-appearance: none;
+
+  &:disabled{
+      opacity: 0.5;
+  }
+
+  &-link{
+    color: inherit;
+    text-decoration: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    text-align: center;
+    &:hover{
+        color: inherit;
+        text-decoration: inherit;
+        background-color: transparent;
+        cursor: pointer; 
+    }
+  }
+
+  &-bg-blue{
+      background-color: #0097dc;
+      &:hover{
+        background-color: #0097dc99; 
+    }
+  }
+  &-bg-dark{
+      background-color: #2e3038;
+      &:hover{
+        background-color: #2e303899; 
+    }
+  }
+  &-bg-white{
+      background-color: white;
+     
+  }
+  &-outline-blue{
+      border: 1px solid #0097dc;
+     
+  }
+  &-bg-none{
+      background-color: transparent;
+     
+  }
+  &-text-white{
+      color: #fff;
+  }
+  &-text-blue{
+      color: #0097dc;
+  }
+
+  &-rounded{
+      border-radius: 24px;
+  }
+  &-buy{
+    min-width: 86px;
+  }
+  &-profile{
+    min-width: 124px;
+  }
+  &-block{
+      width: 100%;
+      display: block;
+  }
+  &-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-no-bg{
+    background-color: transparent;
+    padding: 0;
+
+  }
+  &-white-underlined{
+      text-decoration: underline;
+      color: white;
+  }
+  &-blue-underlined{
+      text-decoration: underline;
+      color: #0097dc;
+  }
+  &-h-48{
+    height: 48px;
+  }
+}

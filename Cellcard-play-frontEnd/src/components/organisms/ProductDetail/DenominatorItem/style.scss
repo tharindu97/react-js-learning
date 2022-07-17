@@ -1,0 +1,48 @@
+/*
+ * Author: Dilum Sanjaya (dranasinghe@mitrai.com)
+ * Date: Tuesday, 12th August 2020 12:00 pm
+ * Module: Cellcard Play Frontend
+  * -----
+ * Last Modified: Wednesday, 26th August 2020 11:43:48 am
+ * Modified By: Buwaneka Sumanasekara (bsumanasekara@mitrai.com>)
+ * -----
+ * Copyright 2020 - 2020 Mitra Innovation Ltd., Mitra Innovation Ltd.
+ */
+ 
+.product-denominator {
+  .btn{
+    font-size:13px; 
+    width:87px;
+    font-weight:600
+  }
+  line-height: 1;
+
+  &-title {
+    font-size: 18px;
+    margin-top: 24px;
+    margin-bottom: 15px;
+  }
+  &-item {
+    border-radius: 10px;
+    background-color: #222327;
+    padding: 14px 7px 14px 15px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    line-height: 1;
+    &-best {
+      border: 1px solid #d83d96;
+    }
+
+    
+  }
+
+  &-best-value{
+    font-size: 11px;
+    font-weight: 600;
+    color: white;
+    padding: 4px;
+    background: #d83d96;
+    border-radius: 5px;
+    margin-left: 5px;
+  }
+}

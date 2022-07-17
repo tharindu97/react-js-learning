@@ -1,0 +1,45 @@
+.buy-plan {
+  h4 {
+    margin-top: 40px;
+    font-size: 18px;
+  }
+  &-dialogue{
+    &-summary {
+      display: flex;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 13px;
+  
+      &-left {
+        padding-right: 10px;
+        &-item {
+          height: 30px;
+          color: #bdb9b9;
+          font-size: 13px;
+        }
+      }
+  
+      &-right-item {
+        height: 30px;
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+    &-form{
+      padding-bottom: 20px;
+    }
+  }
+ 
+  &-spinner-full{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #00000088;
+  }
+}
+
+.checkout-page-info-icon{
+  width: 24px;
+  height: 24px;
+}

@@ -1,0 +1,80 @@
+/*
+ * Author: Buwaneka Sumanasekara (bsumanasekara@mitrai.com)
+ * Date: Friday, 21st August 2020 2:10:35 pm
+ * Module: Cellcard Play Frontend
+ * -----
+ * Last Modified: Sunday, 23rd August 2020 10:18:14 am
+ * Modified By: Buwaneka Sumanasekara (bsumanasekara@mitrai.com>)
+ * Copyright © 2020 Cellcard Play. All rights reserved.
+ */
+
+ .voucher-details{
+    .row{
+        &-header-wrapper{
+         hr {
+            margin-top: 17px;
+            margin-bottom: 0; 
+            border: 0;
+            border-top: 1px solid #3c3d44;
+          }
+        };
+        &-label{
+           background-color:#222327;
+           
+        }
+        &-desc{
+          color: #bdb9b9;
+          font-size: 16px;
+
+        }
+        &-terms{
+            &-heading{
+               font-size: 18px;
+               font-weight: 600;
+               color: white;
+            };
+            &-sub{
+               font-size: 16px;
+               font-weight:normal;
+               color: #bdb9b9;
+            };
+        }
+
+        
+        
+        &-mark-as-read{
+           .btn{
+              &-outline-primary{
+                  &:hover{
+                     color:#0097dc;
+                     background-color: inherit;
+                  }
+              }
+           };
+           &-des{
+              color: #ff1e3a;
+              font-size: 14px;
+              font-weight: normal;
+           }      
+          
+           hr {
+            margin-top: 0;
+            margin-bottom: 0; 
+            border: 0;
+            border-top: 1px solid #3c3d44;
+          }
+          
+        }
+    }
+    
+     .dialog-logout{
+        &-body-title-sub{
+           font-size: 16px;
+           font-weight: normal;
+           color:#bdb9b9;
+        };
+        .btn{
+            margin-bottom: 10px;
+        }
+     }
+}

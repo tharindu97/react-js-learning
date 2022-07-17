@@ -1,0 +1,32 @@
+/*
+ * File: style.scss
+ * Project: cellcard-play-pwa
+ * File Created: Wednesday, 8th July 2020 10:00:28 am
+ * Author: Jerobert (zjerobert@mitrai.com)
+ * Copyright 2020 - 2020 Mitra Innovation Ltd., Mitra Innovation Ltd.
+ */
+
+.promo-redeem {
+  &-heading {
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.promo-gamers {
+  &-heading {
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.promo-discount {
+  &-heading {
+    padding: 0 2rem;
+    margin-bottom: 0.5rem;
+  }
+  &-content {
+    padding: 0 1rem;
+    margin-bottom: 0.8rem;
+  }
+}

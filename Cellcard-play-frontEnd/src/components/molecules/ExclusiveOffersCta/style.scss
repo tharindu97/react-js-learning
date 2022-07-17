@@ -1,0 +1,41 @@
+/*
+ * Author: Jude Fernando (jfernando@mitrai.com)
+ * Date: Wednesday, 12th August 2020 11:32:16 am
+ * Module: Cellcard Play Frontend
+ * Copyright © 2020 Cellcard Play. All rights reserved.
+ */
+.exclusive-offers-cta {
+    background-image: linear-gradient(101deg, #d83d96, #370060);
+    height: 76px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    color: #fff;
+
+    &-image {
+        margin-right: 10px;
+        min-width: 100px;
+    }
+
+    &-label {
+        line-height: 1.2;
+
+        .label-sub {
+            font-size: 14px;
+        }
+        .label-main {
+            font-size: 18px;
+        }
+    }
+
+    &-icon {
+        margin-left: auto;
+        padding: 10px;
+    }
+
+    img {
+        height: 76px;
+        width: auto;
+    }
+}

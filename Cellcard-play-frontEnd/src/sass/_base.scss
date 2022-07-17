@@ -1,0 +1,292 @@
+/*
+ * Author: Jude Fernando (jfernando@mitrai.com)
+ * Date: Wednesday, 22nd July 2020 10:27:30 am
+ * Module: Cellcard Play Frontend
+ * -----
+ * Last Modified: Friday 31 July 2020 5:00:00 pm
+ * Modified By: Dilum Sanjaya (dranasinghe@mitrai.com)
+ * -----
+ * Copyright © 2020 Cellcard Play. All rights reserved.
+ */
+body {
+  background-color: #101010;
+  color: #fff;
+
+  &.menu-open {
+    overflow: hidden;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+  [class^='icon-'] {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0.2em;
+    line-height: 1;
+  }
+  &.btn--icon {
+    height: 40px;
+    padding: 0rem 1rem;
+
+    &--left {
+      i {
+        float: right;
+      }
+    }
+  }
+  [class^='icon-'] {
+    font-size: 1.5em;
+  }
+  &-sm {
+    min-width: 4.5rem;
+
+    &.btn--icon {
+      height: 32px;
+      padding: 0rem 0.5rem;
+    }
+
+    & {
+      [class^='icon-'] {
+        font-size: 2em;
+      }
+    }
+  }
+  &-lg {
+    font-size: 1rem;
+  }
+  &-light,
+  &-light:focus,
+  &-light:active,
+  &-light:hover {
+    color: #0097dc !important;
+  }
+  &--rounded {
+    border-radius: 2em;
+  }
+
+  &-dark {
+    background-color: #2e3038;
+  }
+
+  &--radius {
+    border-radius: 0.4rem;
+  }
+}
+
+.btn-landing {
+  width: 12rem;
+  padding: 0.6rem 0.4rem !important;
+  margin: 0.5rem auto;
+}
+
+p {
+  margin: 0;
+  font-size: 16px;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.loader-spinner {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba($color: #000000, $alpha: 0.6);
+}
+small {
+  font-size: 16px;
+  color: #bdb9b9;
+
+  &.error {
+    color: #ff1e3a;
+  }
+}
+.main-loader {
+  position: fixed;
+  background-color: #2e3038;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.text-white {
+  color: #fff;
+}
+.text-white-pale {
+  color: #e3e3e3;
+}
+.bg-white {
+  background: #fff;
+}
+.text-cta-blue {
+  color: #0097dc;
+}
+.bg-cta-blue {
+  background: #0097dc;
+}
+
+.text-cellcard {
+  color: #f9a01b;
+}
+.bg-cellcard {
+  background: #f9a01b;
+}
+.text-magenta {
+  color: #d83d96;
+}
+.bg-magenta {
+  background: #d83d96;
+}
+.text-gray {
+  color: #bdb9b9;
+}
+.bg-gray {
+  background: #bdb9b9;
+}
+.text-gray-2 {
+  color: #222327;
+}
+.bg-gray-2 {
+  background: #222327;
+}
+.text-gray-4 {
+  color: #2e3038;
+}
+.bg-gray-4 {
+  background: #2e3038;
+}
+.bg-gray-3 {
+  background: #e3e3e3;
+}
+.bg-gray-5 {
+  background: #171819;
+}
+.bg-gray-6 {
+  background-color: #101010;
+}
+.text-gray-6 {
+  color: #101010;
+}
+.text-red-1 {
+  color: #ff1e3a;
+}
+.bg-red-1 {
+  background: #ff1e3a;
+}
+.link-nulled {
+  color: inherit;
+  text-decoration: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  &:hover {
+    color: inherit;
+    text-decoration: inherit;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+.btn {
+  line-height: normal;
+}
+.border-10 {
+  border-radius: 10px;
+}
+.border-5 {
+  border-radius: 5px;
+}
+.w-33 {
+  width: 33%;
+}
+.lh-removed {
+  line-height: 1;
+}
+
+.focus-nulled, a, .generic-header-button-nulled, .link-nulled {
+  -webkit-appearance: none;
+  outline: none;
+  border-color: transparent;
+  -webkit-appearance: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  outline-style: none;
+  &:active {
+    outline-style: none;
+    outline: none;
+    border-color: transparent;
+    -webkit-appearance: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+  &:hover {
+    outline-style: none;
+    outline: none;
+    border-color: transparent;
+    -webkit-appearance: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+  &:focus {
+    outline-style: none;
+    outline: none;
+    border-color: transparent;
+    -webkit-appearance: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+  &:focus-within {
+    outline-style: none;
+    outline: none;
+    border-color: transparent;
+    -webkit-appearance: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+  &:focus-visible {
+    outline-style: none;
+    outline: none;
+    border-color: transparent;
+    -webkit-appearance: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+}
+
+.w-btn-landing{
+  min-width: 195px;
+}
+
+body{
+  line-height: normal;
+}

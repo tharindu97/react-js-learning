@@ -1,0 +1,51 @@
+export default {
+  h0: {
+    'extra-bold': { km: 'bold', zh: 'bold' },
+    bold: { km: '', zh: '' },
+    'semi-bold': { km: '', zh: '' },
+    medium: { km: '', zh: '' },
+    regular: { km: '', zh: '' },
+  },
+  h1: {
+    'extra-bold': { km: 'bold', zh: 'bold' },
+    bold: { km: '', zh: '' },
+    'semi-bold': { km: 'regular', zh: 'medium' },
+    medium: { km: '', zh: '' },
+    regular: { km: '', zh: '' },
+  },
+  h2: {
+    'extra-bold': { km: '', zh: '' },
+    bold: { km: '', zh: '' },
+    'semi-bold': { km: 'regular', zh: 'regular' },
+    medium: { km: '', zh: '' },
+    regular: { km: '', zh: '' },
+  },
+  h3: {
+    'extra-bold': { km: '', zh: '' },
+    bold: { km: '', zh: '' },
+    'semi-bold': { km: 'regular', zh: 'regular' },
+    medium: { km: '', zh: '' },
+    regular: { km: '', zh: '' },
+  },
+  body: {
+    'extra-bold': { km: '', zh: '' },
+    bold: { km: '', zh: '' },
+    'semi-bold': { km: 'regular', zh: 'medium' },
+    medium: { km: '', zh: '' },
+    regular: { km: '', zh: '' },
+  },
+  sub1: {
+    'extra-bold': { km: '', zh: '' },
+    bold: { km: '', zh: '' },
+    'semi-bold': { km: 'regular', zh: 'regular' },
+    medium: { km: '', zh: '' },
+    regular: { km: '', zh: '' },
+  },
+  sub2: {
+    'extra-bold': { km: '', zh: '' },
+    bold: { km: '', zh: '' },
+    'semi-bold': { km: '', zh: '' },
+    medium: { km: '', zh: '' },
+    regular: { km: '', zh: '' },
+  },
+};

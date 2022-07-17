@@ -1,0 +1,52 @@
+.main-nav {
+    background-color: #171819;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    padding-bottom: 10px;
+    height: 65px;
+    justify-content: space-around;
+
+    &__link {
+        background-color: transparent;
+        border: none;
+        line-height: 1.1;
+
+        [class^="icon-"] {
+            font-size: 28px;
+            margin: 0;
+        }
+
+
+
+        &:active,
+        &:focus {
+            background-color: transparent !important;
+            border: none;
+            box-shadow: none;
+            box-shadow: none !important;
+            text-decoration: none;
+            background-color: transparent;
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
+        }
+        &__label {
+            font-size: 10px;
+            display: block;            
+        }
+
+        &--active {
+            color: #f9a01b !important;
+            -webkit-tap-highlight-color: transparent;
+        }
+        &--not-active {
+            color: #bdb9b9 !important;
+            -webkit-tap-highlight-color: transparent;
+        }
+    }
+}
+.main-nav-wrapper {
+    height: 80px;
+}

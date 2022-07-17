@@ -1,0 +1,29 @@
+/*
+* File: style.scss
+* Project: cellcard-play-pwa
+* Author: Dilum Sanjaya (dranasinghe@mitrai.com)
+* File Created: Tuesday, 08th September 2020 03:58 pm
+* Module: Cellcard Play Frontend
+* Copyright 2020 - 2020 Mitra Innovation Ltd., Mitra Innovation Ltd.
+*/
+.checkout-referral{
+    &-code-separator{
+        border-bottom: 2px solid #101010;
+    }
+    &-tick-mark{
+        font-size: 10px;
+              background: #0097dc;
+             color:white;
+              border-radius: 50%;
+              width:18px;
+              height: 18px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-left: 5px;
+    }
+    &-chevron{
+        color: #0097dc;
+        font-size: 20px;
+    }
+}

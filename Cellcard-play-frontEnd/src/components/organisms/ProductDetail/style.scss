@@ -1,0 +1,85 @@
+/*
+ * Author: Jude Fernando (jfernando@mitrai.com)
+ * Date: Thursday, 13th August 2020 2:13:39 am
+ * Module: Cellcard Play Frontend
+ * -----
+ * Last Modified: Wednesday, 26th August 2020 12:29:13 pm
+ * Modified By: Buwaneka Sumanasekara (bsumanasekara@mitrai.com>)
+ * -----
+ * Copyright 2020 - 2020 Mitra Innovation Ltd., Mitra Innovation Ltd.
+ */
+
+.modal-confirm-purchase{
+    .container{
+        padding-left: 20px;
+        padding-right: 20px; 
+    }
+    .dialog-box-footer{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 26px;
+    }
+    .title{
+        &-lft{
+            font-size: 13px;
+            font-weight: normal;
+            color: #d0cdd8;
+        };
+        &-right{
+            font-size: 16px;
+            font-weight: 600;
+            color: #ffffff;
+        }
+    }
+}
+.product {
+    &-image {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        background-color: #222327;
+        border-radius: 10px;
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+    &-tags {
+        .badge {
+            background-color: #222327;
+            color: #bdb9b9;
+            font-weight: normal;
+            font-size: 10px;
+            padding: .4rem;
+            margin: 0 .2rem;
+        }
+    }
+    &-plans {
+        margin: 10px auto;
+
+        img {
+            width: 18px;
+            line-height: 0;
+        }
+        .badge {
+            background-color: #222327;
+            color: #f9a01b;
+            padding: .4rem .6rem;
+            margin: 0 .2rem;
+            font-size: 11px;
+        }
+    }
+    &-detail-loading-container{
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        z-index: 9999;
+    }
+}

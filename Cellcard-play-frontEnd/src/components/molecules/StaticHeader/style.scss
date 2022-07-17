@@ -1,0 +1,14 @@
+.static-header {
+    padding: 10px 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    position: relative;
+
+    &-close {
+        position: absolute;
+        font-size: 20px;
+        padding: 10px;
+        top: 0;
+        color: #fff;
+    }
+}

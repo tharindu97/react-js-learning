@@ -1,0 +1,26 @@
+/*
+ * Author: Jerobert (zjerobert@mitrai.com)
+ * Date: Thursday, 27th August 2020 11:00:40 am
+ * Module: Cellcard Play Frontend
+
+ * Last Modified: Friday, 11th September 2020 10:00:29 am
+ * Modified By: Jerobert (zjerobert@mitrai.com>)
+ * Copyright © 2020 Cellcard Play. All rights reserved.
+ */
+.btn--unsubscribe {
+  color: #0097dc;
+}
+
+@media only screen and (min-width: 600px) {
+  .plan-wrapper {
+    max-height: 95vh;
+    height: 90vh;
+    position: relative;
+
+    .btn-upgrade-wrapper {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+    }
+  }
+}

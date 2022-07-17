@@ -1,0 +1,20 @@
+/*
+ * Author: Dilum Sanjaya (dranasinghe@mitrai.com)
+ * Date: Tuesday, 12th August 2020 12:00 pm
+ * Module: Cellcard Play Frontend
+ * Copyright © 2020 Cellcard Play. All rights reserved.
+ */
+.hidden-form {
+    padding: 0px 22px 5px 22px;
+  &-submit {
+    background: #0097dc;
+    padding: 15px 0 15px 0;
+    width: 100%;
+    border: none;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: #fff;
+  }
+}

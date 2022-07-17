@@ -1,0 +1,54 @@
+/*
+ * Author: jerobert (zjerobert@mitrai.com)
+ * Date: Friday 14th AUGUST 2020 13:00:00 pm
+ * Module: Cellcard Play Frontend
+ * Copyright © 2020 Cellcard Play. All rights reserved.
+ */
+
+.dialog-full {
+  background-color: #101010;
+  position: fixed;
+  z-index: 10000;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  transform: translate(0, -100vh);
+  transition: all 0.5s ease;
+
+  &-show {
+    transform: translate(0, 0);
+  }
+
+  &-top {
+    flex: 1;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 37px;
+    padding-right: 37px;
+
+    &-title {
+      text-align: center;
+      font-size: 24px;
+      font-weight: 800;
+    }
+
+    &-description {
+      text-align: center;
+      font-size: 16px;
+      font-weight: normal;
+      color: #e3e3e3;
+    }
+  }
+
+  &-bottom {
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-bottom: 15px;
+  }
+}

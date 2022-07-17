@@ -1,0 +1,25 @@
+.edit-name{
+    &-input-container{
+        background-color: #101010;
+        border-radius: 10px;
+        border: 2px solid transparent;
+        padding: 8px 16px;
+        margin-top: 29px;
+
+        &:focus-within{
+            border: 2px solid #008bc5;
+            outline: none;
+            transition: border-color 0.15s ease-in-out;
+        }
+    }
+    &-input{
+        font-size: 18px;
+        font-weight: bold;
+        background: none;
+        color: #fff;
+        border: none;
+        &:focus{
+            outline: none;
+        }
+    }
+}

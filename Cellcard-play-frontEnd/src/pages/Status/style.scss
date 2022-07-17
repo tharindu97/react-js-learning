@@ -1,0 +1,75 @@
+.status-page {
+  &-main-image {
+    width: 108px;
+    height: 108px;
+  }
+  &-body {
+    font-size: 16px;
+    font-weight: normal;
+    color: #e3e3e3;
+  }
+
+  &-points-container {
+    background: #222327;
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: -15vw;
+    
+    vertical-align: middle;
+  }
+  &-points-item {
+    vertical-align: middle;
+  }
+  &-points-image {
+    height: 28px;
+    width: 28px;
+  }
+  &-membership-card{
+    position: relative;
+    height: 40vw;
+
+    &-text{
+      position: absolute;
+      left: 5%;
+      top:50%;
+      font-size: 5vw;
+      font-weight: normal;
+      transform: translate(0, -50%);
+      white-space: nowrap;
+      text-transform: uppercase;
+    }
+    &-logo{
+      width: 30vw;
+      position: absolute;
+      left: 5%;
+      top: 5%;
+    }
+    
+  }
+  &-package-image{
+    width: 40vw;
+    
+  }
+  &-description{
+    font-size: 16px;
+    font-weight: normal;
+    color: #bdb9b9;
+  }
+}
+.status-button-bottom{
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+}
+
+.purchase-screen-description{
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #bdb9b9;
+}

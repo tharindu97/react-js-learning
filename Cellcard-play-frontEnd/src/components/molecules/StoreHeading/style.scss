@@ -1,0 +1,31 @@
+/*
+ * Author: Buwaneka Sumanasekara (bsumanasekara@mitrai.com)
+ * Date: Friday, 21st August 2020 10:53:44 am
+ * Module: Cellcard Play Frontend
+ * -----
+ * Last Modified: Sunday, 23rd August 2020 8:56:02 am
+ * Modified By: Buwaneka Sumanasekara (bsumanasekara@mitrai.com>)
+ * Copyright © 2020 Cellcard Play. All rights reserved.
+ */
+
+
+ .store-heading{
+    display: flex;
+    &-media {
+   
+        width: 80px;
+        height: 80px;
+        margin-right: 15px;
+        border-radius: 10px;
+        img {
+            border-radius: 10px;
+        }
+    };
+    &-content{
+      p{
+        font-size:13px;
+        font-weight: normal;
+        color: #e3e3e3;  
+      }
+    }
+ }

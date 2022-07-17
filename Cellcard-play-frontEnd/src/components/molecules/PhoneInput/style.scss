@@ -1,0 +1,59 @@
+/*
+ * Author: Jude Fernando (jfernando@mitrai.com)
+ * Date: Thursday, 23rd July 2020 8:47:29 am
+ * Module: Cellcard Play Frontend
+ * Copyright © 2020 Cellcard Play. All rights reserved.
+ */
+.phone-input {
+    padding: 10px 20px;
+    background-color: #101010;
+    border-radius: 10px;
+    border: solid 2px #008bc5;
+
+    &:focus-within {
+        border-color: #5dccff;
+        outline: 0;
+        box-shadow: none;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        border: solid 2px #008bc5;
+    }
+
+    input,
+    input:focus,
+    .form-control:focus {
+        outline: none;
+        box-shadow: none;
+        border: none;
+        font-size: 18px;
+        font-weight: 600;
+        background-color: transparent;
+        color: #fff;
+        padding: 0;
+        line-height: 1;
+        background-color: #101010;
+    }
+
+    .input-group-prepend {
+
+        .input-group-text {
+            background-color: transparent;
+            border: none;
+            font-size: 18px;
+            color: #bdb9b9;
+            font-weight: 600;
+            padding: 0;
+            padding-right: 10px;
+        }
+
+        img {
+            height: 30px;
+            width: 30px;
+            margin-right: 6px;
+        }
+    }
+    label {
+        color: #bdb9b9;
+        font-size: 13px;
+        margin-bottom: .3rem;
+    }
+}

@@ -1,0 +1,90 @@
+.store-item {
+  display: flex;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: solid 1px #222327;
+  text-decoration: none;
+
+  &,
+  &:focus,
+  &:active {
+    text-decoration: none;
+  }
+
+  &-title {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-height: 1;
+    height: 3rem;
+    overflow: hidden;
+  }
+
+  &-media {
+    width: 110px;
+    height: 110px;
+    margin-right: 10px;
+    background-color: #222327;
+    border-radius: 10px;
+    flex-shrink: 0;
+
+    img {
+      border-radius: 10px;
+    }
+  }
+
+  &-points {
+    color: #f9a01b;
+    img {
+      height: 28px;
+      width: auto;
+      line-height: 0;
+    }
+  }
+
+  &-plan-badges {
+    img {
+      height: 28px;
+      width: auto;
+      margin-right: 5px;
+    }
+  }
+
+  &-offer {
+    color: #ff20a0;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  &-subtitle {
+    color: #e3e3e3;
+    font-size: 13px;
+    text-transform: capitalize;
+  }
+  &-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+
+    &-bottom {
+      display: flex;
+      width: 100%;
+      align-items: flex-end;
+    }
+  }
+
+  &-cta {
+    margin-left: auto;
+    padding-right: 3px;
+    .btn {
+      font-size: 13px !important;
+      width: 87px;
+      padding-top: 6px;
+      height: 30px;
+      text-transform: capitalize;
+    }
+  }
+}

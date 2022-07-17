@@ -1,0 +1,32 @@
+.nav-tabs {
+    border-bottom-color: #222327;
+    display: flex;
+    
+    .nav-link {
+        font-weight: 600;
+        font-size: 18px;
+        color: #bdb9b9;
+        border: none;
+        border-radius: 0;
+        position: relative;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0;
+        text-align: center;
+    }
+    .nav-link.active,
+    .nav-item.show .nav-link {
+        background-color: transparent;
+        color: #f9a01b;
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #f9a01b;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}
