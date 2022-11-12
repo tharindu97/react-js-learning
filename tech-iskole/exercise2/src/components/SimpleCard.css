@@ -1,0 +1,35 @@
+.card-container {
+    background-color: white;
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 35px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: 'Poppins', sans-serif;
+    width: 70%;
+  }
+  
+  .card-container button {
+    background-color: #8B5CF6;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    border: 0;
+    font-size: 14px;
+  }
+  
+  .card-container p {
+    color: #94A3B8;
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+  
+  .card-container h2 {
+    color: #1E293B;
+    font-size: 30px;
+    margin-bottom: 0;
+  }
