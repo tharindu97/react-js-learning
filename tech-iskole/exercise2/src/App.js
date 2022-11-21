@@ -1,8 +1,14 @@
 import './App.css';
-import SimpleCard from './components/SimpleCard';
+import Product from './components/Product';
 
 function App() {
-  return <SimpleCard />
+  return (
+    <>
+      <Product name="Banana" price={150} />
+      <Product name="Apple" price={550} />
+      <Product name="Mango" price={250} />
+    </>
+  )
 }
 
 export default App;
