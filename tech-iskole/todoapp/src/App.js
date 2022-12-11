@@ -1,10 +1,9 @@
-import TodoList from './components/todoList/TodoList';
-import './App.css';
+import "./App.css";
+import TodoList from "./components/TodoList";
 
 function App() {
   return (
     <div className="app">
-      <h1>Tharindu</h1>
       <TodoList />
     </div>
   );
