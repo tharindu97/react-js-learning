@@ -16,13 +16,15 @@ function reducer(state = initialState, action) {
   }
 }
 const store = createStore(reducer);
-console.log(store.getState());
+store.subscribe(() => {
+  console.log(store.getState());
+});
 
 store.dispatch({
   type: "BUY_FRUIT",
   payload: "Extra Information",
 });
 
-console.log(store.getState());
+
 
 
