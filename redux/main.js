@@ -1,31 +1,22 @@
-import {createStore} from 'redux';
+import {createStore, combineReducers} from 'redux';
+import { buyFruit } from './redux/fruit/fruitActions';
+import { fruitReducer } from './redux/fruit/fruitReducer';
+import { buyPharmacy } from './redux/pharmacy/pharmacyActions';
+import { pharmacyReducer } from './redux/pharmacy/pharmacyReducer';
 
-const initialState = {
-  noOfFruits: 5,
-}
+const rootReducer = combineReducers({
+  fruit: fruitReducer,
+  pharmacy: pharmacyReducer,
+});
 
-function reducer(state = initialState, action) {
-  switch (action.type) {
-    case "BUY_FRUIT":
-      return {
-        ...state,
-        noOfFruits: state.noOfFruits - 1
-      };
-    default:
-      return state;
-  }
-}
+const store = createStore(rootReducer);
 
-const store = createStore(reducer);
-store.subscribe(() => {
+const unsubscribe = store.subscribe(() => {
   console.log(store.getState());
 });
 
-store.dispatch({
-  type: "BUY_FRUIT",
-  payload: "Extra Information",
-});
+store.dispatch(buyFruit("Apple"));
+store.dispatch(buyFruit("Banana"));
+store.dispatch(buyPharmacy());
 
-
-
-
+unsubscribe();
