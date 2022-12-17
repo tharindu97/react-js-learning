@@ -1,4 +1,5 @@
-import {createStore, combineReducers} from 'redux';
+import {createStore, combineReducers, applyMiddleware} from 'redux';
+import logger from 'redux-logger';
 import { buyFruit } from './redux/fruit/fruitActions';
 import { fruitReducer } from './redux/fruit/fruitReducer';
 import { buyPharmacy } from './redux/pharmacy/pharmacyActions';
@@ -9,10 +10,10 @@ const rootReducer = combineReducers({
   pharmacy: pharmacyReducer,
 });
 
-const store = createStore(rootReducer);
+const store = createStore(rootReducer, applyMiddleware(logger));
 
 const unsubscribe = store.subscribe(() => {
-  console.log(store.getState());
+  // console.log(store.getState());
 });
 
 store.dispatch(buyFruit("Apple"));

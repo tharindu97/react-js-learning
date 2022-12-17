@@ -12,6 +12,7 @@
     "vite": "^4.0.0"
   },
   "dependencies": {
-    "redux": "^4.2.0"
+    "redux": "^4.2.0",
+    "redux-logger": "^3.0.6"
   }
 }
