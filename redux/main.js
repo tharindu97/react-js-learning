@@ -15,6 +15,7 @@ function reducer(state = initialState, action) {
       return state;
   }
 }
+
 const store = createStore(reducer);
 store.subscribe(() => {
   console.log(store.getState());
