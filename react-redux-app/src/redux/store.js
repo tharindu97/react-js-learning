@@ -1,4 +1,4 @@
-import { createStore, combineReducers, applyMiddleware }  from 'redux';
+import { createStore, combineReducers, applyMiddleware, compose }  from 'redux';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 import albumReducer from './album/albumReducer';
@@ -9,6 +9,8 @@ const rootReducer = combineReducers({
     album: albumReducer,
 })
 
-const store = createStore(rootReducer, applyMiddleware(logger, thunk));
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+const store = createStore(rootReducer, composeEnhancers(applyMiddleware(logger, thunk)));
 
 export default store;
